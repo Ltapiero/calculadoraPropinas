@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="./style.css" rel="stylesheet" type="text/css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Manipulacion de Dom</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Calculadora de propinas</h1>
+			<div class="bg_calculadora">
+				<div class="seccion_1">
+					<h3>Bill</h3>
+					<input class="input-seccion_1-bill" type="number" value="0"/>
+					<h3>Select Tip %</h3>
+					<div class="btn_tip">
+						<button class="btn_tip-button btn_tip--selected">5%</button>
+						<button class = "btn_tip-button">10%</button>
+						<button class = "btn_tip-button">15%</button>
+						<button class = "btn_tip-button">25%</button>
+						<button class = "btn_tip-button">50%</button>
+						<input class="custom-button" placeholder="Custom"></input>
+					</div>
+					<h3 >Number of people <span id="alert"></span></h3>
+					<input class="input-seccion_1-people" type="number" value="1"/>
+				</div>
+				<div class="seccion_2">
+					<div class="seccion_2-A">
+						<div class="seccion_2-A_text">
+							<h3>Tip Amount</h3>
+							<p>/ person</p>
+						</div>
+						<div class="seccion_2-A_number">
+							<span class="tip_amount">0</span>
+						</div>
+					</div>
+					<div class="seccion_2-B">
+						<div class="seccion_2-B_text">
+							<h3>Total</h3>
+							<p>/ person</p>
+						</div>
+						<div class="seccion_2-B_number">
+							<span class="total">0</span>
+						</div>
+					</div>
+					<button class="btnReset">RESET</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js.js"></script>
+	</body>
+</html>
